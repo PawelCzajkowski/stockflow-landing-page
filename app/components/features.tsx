@@ -1,8 +1,12 @@
+'use client';
+
 import { Clock, BarChart3, Settings } from "lucide-react";
 import automationIcon from "@/public/automat.jpeg";
 import scheduleIcon from "@/public/zegar.jpeg";
 import inventoryIcon from "@/public/paczki.jpeg";
 import Image from "next/image";
+import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 
 const Features = () => {
   const features = [
@@ -10,19 +14,19 @@ const Features = () => {
       icon: <Clock className="w-8 h-8 text-primary" />,
       image: inventoryIcon,
       title: "Lista produktów",
-      description: "Ustaw listę produktów, które chcesz śledzić - tylko te, które potrzebujesz."
+      description: "1. Ustaw listę produktów, które chcesz śledzić - tylko te, które potrzebujesz."
     },
     {
       icon: <BarChart3 className="w-8 h-8 text-primary" />,
       image: scheduleIcon,
       title: "Elastyczne planowanie",
-      description: "Ustaw niestandardowe harmonogramy, które pasują do Twojego biznesu. Codziennie, co tydzień lub w niestandardowych odstępach - masz kontrolę."
+      description: "2. Ustaw niestandardowe harmonogramy, które pasują do Twojego biznesu. Codziennie, co tydzień lub w niestandardowych odstępach - masz kontrolę."
     },
     {
       icon: <Settings className="w-8 h-8 text-primary" />,
       image: automationIcon,
       title: "Generowanie zamówień w tle",
-      description: "Otrzymuj dokładne raporty zamówień bez przerywania pracy - system zapisze na twoim Google Drive."
+      description: "3. Otrzymuj dokładne raporty zamówień bez przerywania pracy - system zapisze na twoim Google Drive."
     }
   ];
 
@@ -34,7 +38,7 @@ const Features = () => {
             Potężne Funkcje dla Nowoczesnego E-commerce
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Wszystko, czego potrzebujesz, aby utrzymać porządek w swoim magazynie i sprawnie prowadzić biznes.
+            Utrzymaj porządek w swoim magazynie i sprawnie prowadź biznes w 3 prostych krokach.
           </p>
         </div>
 
@@ -60,6 +64,14 @@ const Features = () => {
             </div>
           ))}
         </div>
+
+        <div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center">
+              <Button variant="hero"
+                onClick={() => window.open('https://forms.gle/yRbSpSkDJUPF6gjEA', '_blank')}>
+                Dołącz do oczekujących
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </div>
       </div>
     </section>
   );

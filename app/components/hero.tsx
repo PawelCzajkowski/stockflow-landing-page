@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import heroImage from "@/public/hero-warehouse.jpg";
 import Image from "next/image";
 import Button from "@/app/components/ui/button";
