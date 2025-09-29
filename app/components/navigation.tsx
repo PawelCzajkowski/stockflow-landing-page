@@ -1,4 +1,3 @@
-import { Button } from "@mui/material"
 import { Package } from "lucide-react";
 
 const Navigation = () => {
@@ -15,7 +14,7 @@ const Navigation = () => {
           </div>
           
           {/* Navigation Links */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* <div className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-foreground hover:text-primary transition-smooth">
               Features
             </a>
@@ -25,7 +24,7 @@ const Navigation = () => {
             <a href="#about" className="text-foreground hover:text-primary transition-smooth">
               About
             </a>
-          </div>
+          </div> */}
           
           {/* CTA Buttons */}
           {/* <div className="flex items-center space-x-4">
