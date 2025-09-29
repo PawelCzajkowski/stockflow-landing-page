@@ -10,7 +10,7 @@ export default function PrivacyPage() {
                         Administrator danych osobowych
                     </h4>
                     <p className="text-lg text-justify text-muted-foreground max-w-2xl mx-auto mb-8">
-                        Administratorem Państwa danych osobowych jest Paweł Czajkowski, adres: [ADRES DO UZUPEŁNIENIA], e-mail: pawelek.czajkowski@gmail.com.
+                        Administratorem Państwa danych osobowych jest Paweł Czajkowski, e-mail: support@stockflow.pl.
                     </p>
 
                     <h4 className="text-xl font-semibold text-foreground mb-4">
