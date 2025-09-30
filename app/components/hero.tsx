@@ -23,7 +23,7 @@ const Hero = () => {
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                Stwórz reguły, zaplanuj automatyczne raporty i utrzymaj idealny porządek w swoim e-commerce.
+                Stwórz reguły, zaplanuj automatyczne raporty, zamień dane na zamówienie do dostawcy i utrzymaj idealny porządek w swoim e-commerce.
                 Nasz system działa w tle, dzięki czemu Ty masz czas na rozwój biznesu.
               </p>
             </div>
@@ -40,15 +40,15 @@ const Hero = () => {
             <div className="flex items-center space-x-6 text-sm text-muted-foreground">
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2" />
-                Brak potrzeby konfiguracji
+                Prosta konfiguracja
               </div>
-              {/* <div className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-2" />
-                14-dniowy bezpłatny okres próbny
-              </div> */}
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-2" />
-                Możliwość anulowania w dowolnym momencie
+                Prosty interfejs użytkownika
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2" />
+                Cenne dane do analizy sprzedaży
               </div>
             </div>
           </div>

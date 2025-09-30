@@ -26,7 +26,7 @@ const Features = () => {
       icon: <Settings className="w-8 h-8 text-primary" />,
       image: automationIcon,
       title: "Generowanie zamówień w tle",
-      description: "3. Otrzymuj dokładne raporty zamówień bez przerywania pracy - system zapisze na twoim Google Drive."
+      description: "3. Otrzymuj dokładne raporty zamówień bez przerywania pracy - system zapisze raport na twoim Google Drive."
     }
   ];
 
@@ -35,10 +35,10 @@ const Features = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Potężne Funkcje dla Nowoczesnego E-commerce
+            Jak to działa?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Utrzymaj porządek w swoim magazynie i sprawnie prowadź biznes w 3 prostych krokach.
+            Aby otrzymywać automatyczne raporty wykonaj 3 proste kroki.
           </p>
         </div>
 
@@ -46,7 +46,7 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group border border-border/50 rounded-2xl bg-card shadow-soft hover:shadow-medium transition-smooth"
+              className="group text-2xl border border-border/50 rounded-2xl bg-card shadow-soft hover:shadow-medium transition-smooth"
             >
               <div className="p-8 text-center">
                 <div className="mb-6 relative">
@@ -63,6 +63,15 @@ const Features = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center mb-8 mt-8">
+          <h2 className="text-4xl font-bold text-foreground mb-4">
+            Co dalej?
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Z przygotowanych raportów szybko stworzysz zamówienia do swoich dostawców.
+          </p>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center">

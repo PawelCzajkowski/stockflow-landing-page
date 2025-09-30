@@ -45,7 +45,7 @@ const Footer = () => {
           <div className="md:justify-self-end">
             <h4 className="font-semibold text-foreground mb-4">Informacje</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="mailto:support@stockflow.pl" className="hover:text-primary transition-smooth">Centrum pomocy</a></li>
+              <li><a href="mailto:support@stockflow.pl" className="hover:text-primary transition-smooth">Pomoc</a></li>
               <li><a href="/privacy" className="hover:text-primary transition-smooth">Prywatność</a></li>
               {/* <li><a href="#" className="hover:text-primary transition-smooth">Regulamin</a></li> */}
               {/* <li><a href="#" className="hover:text-primary transition-smooth">Status</a></li> */}
