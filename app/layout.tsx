@@ -19,15 +19,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "StockFlow",
   description: "Automatyczny generator zamówień do dostawców dla sklepów internetowych.",
-  // Dodane pełne Open Graph i Twitter meta — dostosuj `url` i `images[].url` do swojej domeny.
+  // Dodane pełne Open Graph i Twitter meta — użyj finalnego URL (www) żeby uniknąć redirectów
   openGraph: {
     title: "StockFlow",
     description: "Automatyczny generator zamówień do dostawców dla e-commerce.",
-    url: "https://stockflow.pl/",
+    url: "https://www.stockflow.pl/",
     siteName: "StockFlow",
     images: [
       {
-        url: "https://stockflow.pl/stockflow-og.png", // Zmieniona nazwa pliku obrazu
+        url: "https://www.stockflow.pl/stockflow-og.png",
         width: 1200,
         height: 630,
         alt: "StockFlow - automatyczny generator zamówień",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "StockFlow",
     description: "Automatyczny generator zamówień do dostawców dla e-commerce.",
-    images: ["https://stockflow.pl/stockflow-og.png"], // Zmieniona nazwa pliku obrazu
+    images: ["https://www.stockflow.pl/stockflow-og.png"],
   },
 };
 
@@ -50,6 +50,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Jawne meta Open Graph i Twitter — używaj finalnego URL (www) aby uniknąć redirectów */}
+        <link rel="canonical" href="https://www.stockflow.pl/" />
+        <meta property="og:title" content="StockFlow" />
+        <meta property="og:description" content="Automatyczny generator zamówień do dostawców dla e-commerce." />
+        <meta property="og:url" content="https://www.stockflow.pl/" />
+        <meta property="og:site_name" content="StockFlow" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.stockflow.pl/stockflow-og.png" />
+        <meta property="og:image:secure_url" content="https://www.stockflow.pl/stockflow-og.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="StockFlow - automatyczny generator zamówień" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="StockFlow" />
+        <meta name="twitter:description" content="Automatyczny generator zamówień do dostawców dla e-commerce." />
+        <meta name="twitter:image" content="https://www.stockflow.pl/stockflow-og.png" />
+        <link rel="image_src" href="https://www.stockflow.pl/stockflow-og.png" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Analytics />
         <SpeedInsights />
