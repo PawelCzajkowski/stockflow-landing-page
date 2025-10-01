@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "StockFlow",
     images: [
       {
-        url: "https://stockflow.pl/opengraph-image.png",
+        url: "https://stockflow.pl/stockflow-og.png", // Zmieniona nazwa pliku obrazu
         width: 1200,
         height: 630,
         alt: "StockFlow - automatyczny generator zamówień",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "StockFlow",
     description: "Automatyczny generator zamówień do dostawców dla e-commerce.",
-    images: ["https://stockflow.pl/opengraph-image.png"],
+    images: ["https://stockflow.pl/stockflow-og.png"], // Zmieniona nazwa pliku obrazu
   },
 };
 
