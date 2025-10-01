@@ -4,6 +4,7 @@ import "./globals.css";
 import Providers from "@/app/providers";
 import Navigation from "./components/navigation";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Analytics />
+        <SpeedInsights />
         <Providers>
           <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-card text-foreground px-3 py-2 rounded-md shadow-soft">Skip to content</a>
           <Navigation />
