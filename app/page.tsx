@@ -9,7 +9,7 @@ export default function Home() {
     <div className="min-h-screen">
       <Head>
         <title>StockFlow</title>
-        <meta name="description" content="Automatyczny generator zamówień do dostawców dla sklepów internetowych." />
+        <meta name="description" content="Automatyczny generator zamówień do dostawców dla e-commerce." />
       </Head>
       <Navigation />
       <Hero />

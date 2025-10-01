@@ -19,6 +19,28 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "StockFlow",
   description: "Automatyczny generator zamówień do dostawców dla sklepów internetowych.",
+  // Dodane pełne Open Graph i Twitter meta — dostosuj `url` i `images[].url` do swojej domeny.
+  openGraph: {
+    title: "StockFlow",
+    description: "Automatyczny generator zamówień do dostawców dla e-commerce.",
+    url: "https://stockflow.pl/",
+    siteName: "StockFlow",
+    images: [
+      {
+        url: "https://stockflow.pl/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "StockFlow - automatyczny generator zamówień",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "StockFlow",
+    description: "Automatyczny generator zamówień do dostawców dla e-commerce.",
+    images: ["https://stockflow.pl/opengraph-image.png"],
+  },
 };
 
 export default function RootLayout({
